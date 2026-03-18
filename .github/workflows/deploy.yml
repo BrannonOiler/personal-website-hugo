@@ -28,5 +28,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - name: Build and Deploy
-        run: hugo && hugo deploy
+      - name: Build
+        run: hugo
+
+      - name: Deploy to S3
+        run: aws s3 sync public/ s3://brannonoiler.com --delete --region us-east-2
