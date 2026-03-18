@@ -10,7 +10,8 @@ To run the website locally, follow these steps:
 
 ```bash
 git clone https://github.com/brannonoiler/personal-website-hugo.git
-cd personal-website-hugo && hugo server -D
+cd personal-website-hugo
+hugo server -D
 ```
 
 2. Open your browser and go to `http://localhost:1313` to see the website.

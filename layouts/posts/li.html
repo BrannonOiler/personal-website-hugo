@@ -4,6 +4,6 @@
     {{ end }}
     <div style="align-items: flex-start;  display: flex; flex-direction: column; justify-content: flex-start;">
         <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
-        <span class="date" style="font-size: 14px; margin: 0px;">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+        <span class="date" style="align-self: flex-start; font-size: 14px; margin: 0px; text-align: left;">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
     </div>
 </li>
