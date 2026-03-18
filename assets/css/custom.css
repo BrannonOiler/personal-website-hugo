@@ -1,0 +1,43 @@
+/* HTML element default styles */
+figcaption {
+  font-size: 13px;
+}
+
+/* Adjustments to Hugo Coder styles */
+.avatar {
+  position: relative;
+  user-select: none;
+  z-index: 100;
+}
+
+.footer {
+  font-size: 13px;
+}
+
+/* Custom styles */
+.flex-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.no-select {
+  user-select: none;
+}
+
+@media (max-width: 512px) {
+  .flex-stack {
+    flex-direction: column;
+  }
+}
+
+/* particles.js */
+#particles-js {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}

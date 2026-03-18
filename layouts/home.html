@@ -1,0 +1,15 @@
+{{ define "content" }}
+  <div id="particles-js" aria-hidden="true"></div>
+  {{ partial "home.html" . }}
+
+  {{- if hugo.IsServer }}
+    {{- $script := resources.Get "js/particles.min.js" }}
+    <script src="{{ $script.RelPermalink }}"></script>
+  {{- else }}
+    {{- $script := resources.Get "js/particles.min.js" | resources.Fingerprint }}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"></script>
+  {{- end }}
+  <script>
+    particlesJS.load('particles-js', '/js/particles-config.json');
+  </script>
+{{ end }}
