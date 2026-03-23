@@ -1,6 +1,6 @@
 +++
 date = '2026-03-17T15:20:00-05:00'
-draft = false
+draft = true
 featuredImage = 'img/posts/first-post/featured-image.jpg'
 subtitle = 'A placeholder while I continue writing'
 title = 'First Post'

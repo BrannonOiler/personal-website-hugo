@@ -1,6 +1,6 @@
-<li style="align-items: flex-start; display: flex; gap: 16px;">
+<li style="align-items: flex-start; display: flex; gap: 16px; margin-bottom: 8px;">
     {{ if .Params.featuredImage }}
-    <img src="{{ .Params.featuredImage | relURL }}" alt="{{ .Title }}" style="flex-shrink: 0; height: 64px; object-fit: cover; width: auto;">
+    <img src="{{ .Params.featuredImage | relURL }}" alt="{{ .Title }}" style="flex-shrink: 0; height: 64px; object-fit: cover; width: 64px;">
     {{ end }}
     <div style="align-items: flex-start;  display: flex; flex-direction: column; justify-content: flex-start;">
         <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>

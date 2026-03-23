@@ -10,11 +10,22 @@ figcaption {
   z-index: 100;
 }
 
+.content figure {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .footer {
   font-size: 13px;
 }
 
 /* Custom styles */
+.featured-image {
+  max-height: 256px;
+  object-fit: contain;
+  width: auto;
+}
+
 .flex-stack {
   display: flex;
   flex-direction: row;
@@ -26,6 +37,10 @@ figcaption {
 }
 
 @media (max-width: 512px) {
+  .featured-image {
+    width: 100%;
+  }
+
   .flex-stack {
     flex-direction: column;
   }
